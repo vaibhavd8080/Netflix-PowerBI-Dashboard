@@ -49,14 +49,6 @@ The dataset was cleaned and transformed before visualization:
 
 ---
 
-## 🚀 How to Use
-1. Download the `.pbix` file from the **PowerBI** folder
-2. Open in **Power BI Desktop**
-3. Refresh data if needed
-4. Explore insights using slicers
-
----
-
 ## 👤 Author
 **Vaibhav Deshmukh**  
 Aspiring Data Analyst | Power BI | SQL | Python
