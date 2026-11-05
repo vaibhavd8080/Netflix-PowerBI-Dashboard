@@ -2,13 +2,22 @@
 
 An interactive Power BI dashboard exploring the Netflix catalogue, including content type, genre distribution, production countries and release-year trends.
 
-## Dashboard Preview
+## Dashboard preview
 
 <p align="center">
   <img src="Images/dashboard_preview.png" alt="Netflix content analysis Power BI dashboard" width="900">
 </p>
 
-## Business Questions
+## Open the project files
+
+- [Power BI dashboard (.pbix)](PowerBI/Netflix_Dashboard.pbix)
+- [Cleaned Netflix dataset](Data/Netflix_OneFile_Cleaned_Final.csv)
+- [Original compressed dataset](Data/netflix_titles.csv.zip)
+- [Dashboard preview image](Images/dashboard_preview.png)
+
+Open the PBIX file in Power BI Desktop to use the report's interactive controls.
+
+## Business questions
 
 This dashboard is designed to help explore:
 
@@ -18,7 +27,7 @@ This dashboard is designed to help explore:
 - How does content volume vary by release year?
 - How do catalogue patterns change when filtering by content type, country, genre or year?
 
-## Dashboard Features
+## Dashboard features
 
 - Movie and TV show comparison.
 - Country-level content distribution.
@@ -26,7 +35,7 @@ This dashboard is designed to help explore:
 - Release-year trend analysis.
 - Interactive slicers for Type, Country, Genre and Release Year.
 
-## Key Measures
+## Key measures
 
 The report uses DAX measures to calculate:
 
@@ -35,18 +44,11 @@ The report uses DAX measures to calculate:
 - Total TV Shows
 - Movie and TV Show share of total titles
 
-## Data Preparation
+## Data preparation
 
-The source data was prepared before dashboard development. The documented preparation includes:
+The repository contains an original compressed CSV and a cleaned CSV used by the report. The documented preparation includes reviewing the dataset, handling missing values, standardising country and genre fields, and creating calculated fields and measures for reporting.
 
-- Reviewing and cleaning the dataset.
-- Handling missing values.
-- Standardising country and genre fields.
-- Creating calculated fields and measures for reporting.
-
-**Dataset file:** `Data/Netflix_OneFile_Cleaned_Final.csv`
-
-## Tools & Skills
+## Tools and skills
 
 | Tool | Use |
 |---|---|
@@ -56,25 +58,22 @@ The source data was prepared before dashboard development. The documented prepar
 | CSV | Dataset storage |
 | GitHub | Project documentation and version control |
 
-## Repository Structure
+## Repository structure
 
-```text
-Netflix-PowerBI-Dashboard/
-├── Data/
-│   └── Netflix_OneFile_Cleaned_Final.csv
-├── Images/
-│   └── dashboard_preview.png
-├── PowerBI/
-└── README.md
-```
+- \`Data/Netflix_OneFile_Cleaned_Final.csv\` — cleaned dataset used for analysis
+- \`Data/netflix_titles.csv.zip\` — compressed source dataset
+- \`Images/dashboard_preview.png\` — dashboard screenshot
+- \`PowerBI/Netflix_Dashboard.pbix\` — Power BI report
 
-## Interpretation Notes
+## Interpretation notes and limitations
 
 This project describes patterns in the dataset used for the analysis. Catalogue counts and country or genre rankings should not be treated as a live representation of Netflix's current catalogue. Genre and country fields may contain multiple values per title, so category totals may overlap.
+
+The repository includes the report and datasets, but does not currently include a separate step-by-step cleaning notebook. The preparation summary above should therefore not be mistaken for a fully reproducible transformation script.
 
 ## Author
 
 **Vaibhav Deshmukh**  
 Aspiring Data Analyst | Power BI | SQL | Python
 
-[GitHub Profile](https://github.com/vaibhavd8080)
+[GitHub profile](https://github.com/vaibhavd8080)
